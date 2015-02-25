@@ -31,5 +31,15 @@
     "magento-force": "override",
     "auto-append-gitignore": false
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "autoload": {
+        "psr-4": {
+            "TestInstaller\\": ""
+        }
+    },
+  "scripts": {
+    "post-install-cmd": [
+      "TestInstaller\\Installer::postInstall"
+    ]
+  }
 }
