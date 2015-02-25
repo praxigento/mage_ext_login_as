@@ -46,15 +46,4 @@ class Praxigento_LoginAs_Test_ConfigTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($helper instanceof Mage_Core_Helper_Abstract);
     }
 
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        if (!class_exists('Mage')) {
-            require_once '../../../../../Mage.php';
-        }
-        Mage::app();
-    }
 }

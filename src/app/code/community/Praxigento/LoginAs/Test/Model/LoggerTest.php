@@ -42,16 +42,4 @@ class Praxigento_LoginAs_Test_Model_LoggerTest extends PHPUnit_Framework_TestCas
         $log->fatal('fatal', new Exception('test fatal error'));
     }
 
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        if (!class_exists('Mage')) {
-            require_once '../../../../../../Mage.php';
-        }
-        Mage::app();
-    }
-
 }
