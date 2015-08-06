@@ -25,6 +25,7 @@
  */
 class Praxigento_LoginAs_LoginController extends Mage_Core_Controller_Front_Action
 {
+
     public function asAction()
     {
         /** event logger */
