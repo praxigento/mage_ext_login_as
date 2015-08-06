@@ -21,7 +21,7 @@
   "require": {
     "magento-hackathon/magento-composer-installer": "*",
     "magento-hackathon/composer-command-integrator": "*",
-    "magento/core": "1.9.1.0",
+    "magento/core": "1.9.2.1",
     "astorm/PulsestormModuleList": "0.2.2",
     "praxigento/mage_ext_login_as": "dev-master"
   },

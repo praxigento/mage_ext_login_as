@@ -2,6 +2,7 @@
 /.htaccess
 /api.php
 /app/
+/dev/
 /cron.php
 /cron.sh
 /downloader/
@@ -20,4 +21,5 @@
 /shell/
 /skin/
 /var/
+/LICENSE.html
 # Remove all entries below or add required ones above
