@@ -76,11 +76,11 @@ class Praxigento_Shell extends Mage_Shell_Abstract
             foreach ($content as $one) {
                 $data = explode(',', trim($one));
                 $obj = new RecordCustomer();
-                $obj->nameFirst = $data[1];
-                $obj->nameLast = $data[2];
+                $obj->nameFirst = $data[0];
+                $obj->nameLast = $data[1];
                 $obj->groupId = $data[3];
                 /**/
-                $email = strtolower(trim($data[3]));
+                $email = strtolower(trim($data[2]));
                 if (isset($emailReg[$email])) {
                     $emailReg[$email]++;
                     $parts = explode('@', $email);
@@ -108,6 +108,7 @@ class Praxigento_Shell extends Mage_Shell_Abstract
         $customer->setFirstname($nameFirst);
         $customer->setLastname($nameLast);
         $customer->setEmail($email);
+        $customer->setWebsiteId(1);
         try {
             $customer->save();
             $this->_log->trace("New customer '$nameFirst $nameLast <$email>' is saved.");
