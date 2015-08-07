@@ -64,6 +64,7 @@ class Praxigento_LoginAs_Model_Observer extends Varien_Object
                         Praxigento_LoginAs_Config::XMLCFG_ROUTER_ADMIN . Praxigento_LoginAs_Config::ROUTE_REDIRECT,
                         array(
                             Praxigento_LoginAs_Config::REQ_PARAM_LAS_ID => $customerId,
+                            '_cache_secret_key', true /* NB-547 */
                         )
                     );
                     /** create UI button */
