@@ -1,3 +1,7 @@
+1.2.0:
+- Controllers fix (_isAllowed);
+- Auto installation with sample data generation in development version;
+
 1.1.0:
 - Composer module version;
 

@@ -23,7 +23,7 @@
 <config>
     <modules>
         <Praxigento_LoginAs>
-            <version>1.1.0</version>
+            <version>1.2.0</version>
         </Praxigento_LoginAs>
     </modules>
     <admin>
