@@ -29,6 +29,12 @@ chmod g+w -R $LOCAL_ROOT/mage/var/
 
 find $LOCAL_ROOT/mage/ -type d -exec chmod g+x {} \;
 
+
+##
+echo "Install empty Magento database '$DB_NAME'."
+##
+php $LOCAL_ROOT/bin/deploy/install.php
+
 ##
 echo "Post installation setup for database '$DB_NAME'."
 ##
