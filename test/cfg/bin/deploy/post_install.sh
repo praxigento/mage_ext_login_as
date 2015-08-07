@@ -33,6 +33,7 @@ find $LOCAL_ROOT/mage/ -type d -exec chmod g+x {} \;
 ##
 echo "Install empty Magento database '$DB_NAME'."
 ##
+rm $LOCAL_ROOT/mage/app/etc/local.xml
 php $LOCAL_ROOT/bin/deploy/install.php
 
 ##
