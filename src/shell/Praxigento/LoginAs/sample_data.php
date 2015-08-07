@@ -127,8 +127,6 @@ class Praxigento_Shell extends Mage_Shell_Abstract
 Usage:  php -f sample_data.php [options]
 
   --create      Create sample data.
-  --emulate     Emulate operations.
-  --bonusPv     Calculate PV bonus.
 
 USAGE;
     }
