@@ -78,6 +78,8 @@ $_SERVER['argv'] = array(
     "${CFG_USE_SECURE}",
     "--secure_base_url",
     "${CFG_SECURE_BASE_URL}",
+    "--admin_frontname",
+    "${CFG_ADMIN_FRONTNAME}",
     "--use_secure_admin",
     "${CFG_USE_SECURE_ADMIN}",
     "--admin_lastname",
