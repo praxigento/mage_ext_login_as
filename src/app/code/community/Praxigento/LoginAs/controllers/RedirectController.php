@@ -61,7 +61,12 @@ class Praxigento_LoginAs_RedirectController extends Mage_Adminhtml_Controller_Ac
                             $baseTarget = Mage::getStoreConfig(Mage_Core_Model_Url::XML_PATH_SECURE_URL, $defStoreId);
                             $baseSource = Mage::getStoreConfig(Mage_Core_Model_Url::XML_PATH_SECURE_URL);
                             /** compose redirection URL and replace current base by target base */
-                            $url = Mage::getModel('core/url')->getUrl(Praxigento_LoginAs_Config::XMLCFG_ROUTER_FRONT . Praxigento_LoginAs_Config::ROUTE_CUSTOMER_LOGINAS);
+                            $urlModel = Mage::getModel('core/url');
+                            $store = Mage::getModel('core/store')->load($defStoreId);
+                            $urlModel->setStore($store);
+                            $url = $urlModel->getUrl(
+                                Praxigento_LoginAs_Config::XMLCFG_ROUTER_FRONT .
+                                Praxigento_LoginAs_Config::ROUTE_CUSTOMER_LOGINAS);
                             $url = str_replace($baseSource, $baseTarget, $url);
                             /** compose authentication package */
                             /** @var $authPack Praxigento_LoginAs_Model_Package */
