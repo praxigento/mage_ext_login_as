@@ -7,7 +7,7 @@ Development and testing environment is deployed into this location.
     $ git clone git@github.com:praxigento/mage_ext_login_as.git
     $ cd ./mage_ext_login_as/test/
     $ cp templates.json.init templates.json
-    $ nano templates.json   # you need instance configuration here
+    $ nano templates.json   # you need update your instance configuration here
     {
       "vars": {
         "LOCAL_ROOT": "/home/alex/work/github/mage_ext_login_as/test",
