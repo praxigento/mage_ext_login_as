@@ -1,0 +1,106 @@
+<_>
+   <form_key>kjy2oF3EzOvlMl0G</form_key>
+   <name>Praxigento_LoginAs</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>Login as Customer by Praxigento</summary>
+   <description>Allows store manager to login as a customer right from admin panel. No need for master password.</description>
+   <license>Apache Software License</license>
+   <license_uri/>
+   <version>1.2.0</version>
+   <stability>stable</stability>
+   <notes>- Controllers fix (_isAllowed);
+- Auto installation with sample data generation in development version;</notes>
+   <authors>
+      <name>
+         <name>Alex Gusev</name>
+      </name>
+      <user>
+         <user>praxigento</user>
+      </user>
+      <email>
+         <email>support@praxigento.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.2.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>   </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>magelocale</target>
+         <target>mageetc</target>
+      </target>
+      <path>
+         <path/>
+         <path>Praxigento/LoginAs</path>
+         <path>adminhtml/default/default/layout/prxgt/lgas/</path>
+         <path>adminhtml/default/default/template/prxgt/lgas/</path>
+         <path>frontend/base/default/layout/prxgt/lgas/</path>
+         <path>en_US/prxgt/lgas/prxgt_lgas.csv</path>
+         <path>modules/Praxigento_LoginAs.xml</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>
