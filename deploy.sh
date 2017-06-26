@@ -58,6 +58,10 @@ echo "Start composer installation based on '${COMP_DESC_SRC}' descriptor."
 cd ${DIR_HOME}
 composer install    # create magento application using composer description
 
+
+mysqladmin -f -u"${CFG_DB_USER}" -p"${CFG_DB_PASS}" -h"${CFG_DB_HOST}" drop "${CFG_DB_NAME}"
+mysqladmin -f -u"${CFG_DB_USER}" -p"${CFG_DB_PASS}" -h"${CFG_DB_HOST}" create "${CFG_DB_NAME}"
+
 echo "Perform post-installation configuration."
 php ${DIR_MAGE}/install.php -- --license_agreement_accepted yes \
 --locale en_US \
