@@ -7,7 +7,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://packages.firegento.com"
+      "url": "https://packages.firegento.com"
     },
     {
       "type": "vcs",
@@ -20,10 +20,10 @@
   ],
   "require": {
     "magento-hackathon/magento-composer-installer": "*",
-    "magento-hackathon/composer-command-integrator": "1.0",
+    "magento-hackathon/composer-command-integrator": "^1.2",
     "praxigento/composer_plugin_templates": "^1.0",
-    "magento/core": "1.9.2.1",
-    "astorm/PulsestormModuleList": "0.2.2",
+    "magento/core": "1.9.3.3",
+    "astorm/PulsestormModuleList": "^0.2",
     "praxigento/mage_ext_login_as": "dev-master"
   },
   "extra": {

@@ -23,3 +23,12 @@
 /var/
 /LICENSE.html
 # Remove all entries below or add required ones above
+/app/code/community/Pulsestorm/Modulelist
+/app/etc/modules/Pulsestorm_Modulelist.xml
+/app/code/community/Praxigento/LoginAs
+/app/design/adminhtml/default/default/layout/prxgt/lgas
+/app/design/adminhtml/default/default/template/prxgt/lgas
+/app/design/frontend/base/default/layout/prxgt/lgas
+/app/etc/modules/Praxigento_LoginAs.xml
+/app/locale/en_US/prxgt/lgas/prxgt_lgas.csv
+/shell/Praxigento/LoginAs

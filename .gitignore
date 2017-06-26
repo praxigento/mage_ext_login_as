@@ -1,4 +1,7 @@
 /.idea/
 /atlassian-ide-plugin.xml
+/cfg.work.sh
 /test/composer.lock
 /test/vendor/
+/templates.vars.*.json
+/work/
