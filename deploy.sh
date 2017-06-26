@@ -63,6 +63,7 @@ mysqladmin -f -u"${CFG_DB_USER}" -p"${CFG_DB_PASS}" -h"${CFG_DB_HOST}" drop "${C
 mysqladmin -f -u"${CFG_DB_USER}" -p"${CFG_DB_PASS}" -h"${CFG_DB_HOST}" create "${CFG_DB_NAME}"
 
 echo "Perform post-installation configuration."
+# all options see in https://github.com/bragento/magento-core/blob/1.9/install.php
 php ${DIR_MAGE}/install.php -- --license_agreement_accepted yes \
 --locale en_US \
 --timezone UTC \
@@ -71,7 +72,7 @@ php ${DIR_MAGE}/install.php -- --license_agreement_accepted yes \
 --db_name ${CFG_DB_NAME} \
 --db_user ${CFG_DB_USER} \
 --db_pass ${CFG_DB_PASS} \
---session_save db \
+--session_save files \
 --admin_frontname admin \
 --url ${CFG_URL} \
 --skip_url_validation yes \
@@ -79,7 +80,7 @@ php ${DIR_MAGE}/install.php -- --license_agreement_accepted yes \
 --use_secure no \
 --secure_base_url ${CFG_URL} \
 --use_secure_admin no \
---enable_charts no \
+--enable_charts yes \
 --admin_lastname Store \
 --admin_firstname Admin \
 --admin_email ${CFG_ADMIN_EMAIL} \
