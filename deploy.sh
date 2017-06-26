@@ -71,6 +71,10 @@ php ${DIR_MAGE}/install.php -- --license_agreement_accepted yes \
 --admin_frontname admin \
 --url ${CFG_URL} \
 --skip_url_validation yes \
+--use_rewrites yes \
+--use_secure no \
+--secure_base_url ${CFG_URL} \
+--use_secure_admin no \
 --enable_charts no \
 --admin_lastname Store \
 --admin_firstname Admin \
