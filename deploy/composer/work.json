@@ -37,9 +37,6 @@
     "magento-root-dir": "htdocs",
     "magento-force": true,
     "magento-deploystrategy": "copy",
-    "magento-deploystrategy-overwrite": {
-      "praxigento/mage_ext_login_as": "symlink"
-    },
     "auto-append-gitignore": false
   }
 }

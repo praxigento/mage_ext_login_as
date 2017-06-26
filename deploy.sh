@@ -73,7 +73,7 @@ php ${DIR_MAGE}/install.php -- --license_agreement_accepted yes \
 --db_user ${CFG_DB_USER} \
 --db_pass ${CFG_DB_PASS} \
 --session_save files \
---admin_frontname admin \
+--admin_frontname ${CFG_ADMIN_FRONTNAME} \
 --url ${CFG_URL} \
 --skip_url_validation yes \
 --use_rewrites yes \

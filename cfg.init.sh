@@ -14,6 +14,7 @@ LOCAL_GROUP="www-data"
 # Magento installation configuration
 # complete list see at https://github.com/bragento/magento-core/blob/1.9/install.php
 CFG_URL="http://mage2.host.org:8080/"
+CFG_ADMIN_FRONTNAME="adm"
 CFG_DB_HOST="localhost"
 CFG_DB_NAME="mage2"
 CFG_DB_USER="www"
