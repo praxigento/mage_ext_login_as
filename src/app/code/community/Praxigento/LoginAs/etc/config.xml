@@ -32,7 +32,7 @@
                 <use>admin</use>
                 <args>
                     <module>Praxigento_LoginAs</module>
-                    <frontName>prxgt_lgas_admin</frontName>
+                    <frontName>admin</frontName>
                 </args>
             </prxgt_lgas_router>
         </routers>
