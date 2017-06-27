@@ -23,7 +23,7 @@
 <config>
     <modules>
         <Praxigento_LoginAs>
-            <version>1.2.0</version>
+            <version>1.2.1</version>
         </Praxigento_LoginAs>
     </modules>
     <admin>
@@ -31,6 +31,7 @@
             <adminhtml>
                 <args>
                     <modules>
+                        <!-- LGAS-27 -->
                         <Praxigento_LoginAs before="Mage_Adminhtml">Praxigento_LoginAs</Praxigento_LoginAs>
                     </modules>
                 </args>

@@ -1,6 +1,5 @@
 src/app/code/community/Praxigento/LoginAs/ app/code/community/Praxigento/LoginAs/
 src/app/design/adminhtml/default/default/layout/prxgt/lgas/ app/design/adminhtml/default/default/layout/prxgt/lgas/
-src/app/design/adminhtml/default/default/template/prxgt/lgas/ app/design/adminhtml/default/default/template/prxgt/lgas/
 src/app/design/frontend/base/default/layout/prxgt/lgas/ app/design/frontend/base/default/layout/prxgt/lgas/
 src/app/etc/modules/Praxigento_LoginAs.xml app/etc/modules/Praxigento_LoginAs.xml
 src/app/locale/en_US/prxgt/lgas/prxgt_lgas.csv app/locale/en_US/prxgt/lgas/prxgt_lgas.csv

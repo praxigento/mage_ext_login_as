@@ -1,7 +1,10 @@
 <?php
-
 /**
  * User: Alex Gusev <alex@flancer64.com>
+ */
+
+/**
+ * Block prints out HTML code directly, without any templates.
  */
 class Praxigento_LoginAs_Block_Adminhtml_Redirect
     extends \Mage_Core_Block_Abstract
@@ -15,8 +18,7 @@ class Praxigento_LoginAs_Block_Adminhtml_Redirect
         $formName = Praxigento_LoginAs_Config::REQ_PARAM_LAS_ID;
         $packageId = htmlentities($authPack->getPackageId());
         /** Post file name with login parameters */
-        $out = "
-<html>
+        $out = "<html>
 <body>
 <form action=\"$url\" method=\"post\" id=\"login-form\">
     <input type=\"hidden\" name=\"$formName\" id=\"$formName\" value=\"$packageId\"/>
