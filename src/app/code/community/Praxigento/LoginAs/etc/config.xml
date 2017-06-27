@@ -28,13 +28,13 @@
     </modules>
     <admin>
         <routers>
-            <prxgt_lgas_router>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Praxigento_LoginAs</module>
-                    <frontName>admin</frontName>
+                    <modules>
+                        <Praxigento_LoginAs before="Mage_Adminhtml">Praxigento_LoginAs</Praxigento_LoginAs>
+                    </modules>
                 </args>
-            </prxgt_lgas_router>
+            </adminhtml>
         </routers>
     </admin>
     <adminhtml>
