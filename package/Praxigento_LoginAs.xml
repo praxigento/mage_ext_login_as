@@ -1,5 +1,5 @@
 <_>
-   <form_key>kjy2oF3EzOvlMl0G</form_key>
+   <form_key>MAzUifXq4GNnpJip</form_key>
    <name>Praxigento_LoginAs</name>
    <channel>community</channel>
    <version_ids>
@@ -9,10 +9,10 @@
    <description>Allows store manager to login as a customer right from admin panel. No need for master password.</description>
    <license>Apache Software License</license>
    <license_uri/>
-   <version>1.2.0</version>
+   <version>1.2.2</version>
    <stability>stable</stability>
-   <notes>- Controllers fix (_isAllowed);
-- Auto installation with sample data generation in development version;</notes>
+   <notes>- Fix redirection failure on disabled &quot;Admin routing compatibility mode for extensions&quot; option (Config / Advanced /
+Admin / Security /...);</notes>
    <authors>
       <name>
          <name>Alex Gusev</name>
@@ -24,8 +24,8 @@
          <email>support@praxigento.com</email>
       </email>
    </authors>
-   <depends_php_min>5.2.0</depends_php_min>
-   <depends_php_max>6.0.0</depends_php_max>
+   <depends_php_min>5.0.0</depends_php_min>
+   <depends_php_max>8.0.0</depends_php_max>
    <depends>
       <package>
          <name>
@@ -41,7 +41,7 @@
             <max/>
          </max>
          <files>
-            <files>   </files>
+            <files>  </files>
          </files>
       </package>
       <extension>
@@ -62,15 +62,13 @@
          <target>magecommunity</target>
          <target>magedesign</target>
          <target>magedesign</target>
-         <target>magedesign</target>
          <target>magelocale</target>
-         <target>mageetc</target>
+         <target>mage</target>
       </target>
       <path>
          <path/>
          <path>Praxigento/LoginAs</path>
          <path>adminhtml/default/default/layout/prxgt/lgas/</path>
-         <path>adminhtml/default/default/template/prxgt/lgas/</path>
          <path>frontend/base/default/layout/prxgt/lgas/</path>
          <path>en_US/prxgt/lgas/prxgt_lgas.csv</path>
          <path>modules/Praxigento_LoginAs.xml</path>
@@ -80,12 +78,10 @@
          <type>dir</type>
          <type>dir</type>
          <type>dir</type>
-         <type>dir</type>
          <type>file</type>
          <type>file</type>
       </type>
       <include>
-         <include/>
          <include/>
          <include/>
          <include/>
@@ -100,7 +96,10 @@
          <ignore/>
          <ignore/>
          <ignore/>
-         <ignore/>
       </ignore>
    </contents>
+   <page>1</page>
+   <limit>200</limit>
+   <folder/>
+   <package/>
 </_>
