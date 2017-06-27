@@ -137,6 +137,11 @@
         </layout>
     </frontend>
     <global>
+        <blocks>
+            <prxgt_lgas_block>
+                <class>Praxigento_LoginAs_Block</class>
+            </prxgt_lgas_block>
+        </blocks>
         <events>
             <sales_convert_quote_address_to_order>
                 <observers>

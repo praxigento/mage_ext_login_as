@@ -27,6 +27,12 @@
     <!-- ... Nmmlm/Core/controllers/Sync/ProductsController.php:indexAction()           -->
     <!-- ****************************************************************************** -->
     <adminhtml_redirect_index>
-        <block type="adminhtml/template" name="root" template="prxgt/lgas/redirect.phtml"/>
+        <block type="prxgt_lgas_block/adminhtml_redirect" name="root" template="prxgt/lgas/redirect.phtml"/>
+        <!--<reference name="root">-->
+        <!--<action method="setTemplate">-->
+        <!--<template>prxgt/lgas/redirect.phtml</template>-->
+        <!--</action>-->
+        <!--</reference>-->
     </adminhtml_redirect_index>
+
 </layout>
