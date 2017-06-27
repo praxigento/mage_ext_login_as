@@ -1,5 +1,5 @@
 <_>
-   <form_key>MAzUifXq4GNnpJip</form_key>
+   <form_key>RJngPAAoNr7mMelb</form_key>
    <name>Praxigento_LoginAs</name>
    <channel>community</channel>
    <version_ids>
@@ -11,7 +11,7 @@
    <license_uri/>
    <version>1.2.2</version>
    <stability>stable</stability>
-   <notes>- Fix redirection failure on disabled &quot;Admin routing compatibility mode for extensions&quot; option (Config / Advanced /
+   <notes>- Fix redirection failure on disabled &amp;quot;Admin routing compatibility mode for extensions&amp;quot; option (Config / Advanced /
 Admin / Security /...);</notes>
    <authors>
       <name>
@@ -41,7 +41,7 @@ Admin / Security /...);</notes>
             <max/>
          </max>
          <files>
-            <files>  </files>
+            <files>            </files>
          </files>
       </package>
       <extension>
@@ -62,16 +62,16 @@ Admin / Security /...);</notes>
          <target>magecommunity</target>
          <target>magedesign</target>
          <target>magedesign</target>
+         <target>mageetc</target>
          <target>magelocale</target>
-         <target>mage</target>
       </target>
       <path>
          <path/>
          <path>Praxigento/LoginAs</path>
          <path>adminhtml/default/default/layout/prxgt/lgas/</path>
          <path>frontend/base/default/layout/prxgt/lgas/</path>
-         <path>en_US/prxgt/lgas/prxgt_lgas.csv</path>
          <path>modules/Praxigento_LoginAs.xml</path>
+         <path>en_US/prxgt/lgas/prxgt_lgas.csv</path>
       </path>
       <type>
          <type>file</type>
@@ -98,8 +98,4 @@ Admin / Security /...);</notes>
          <ignore/>
       </ignore>
    </contents>
-   <page>1</page>
-   <limit>200</limit>
-   <folder/>
-   <package/>
 </_>
